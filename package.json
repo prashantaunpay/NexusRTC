@@ -1,0 +1,77 @@
+{
+  "name": "nexusrtc",
+  "version": "1.0.0",
+  "description": "NexusRTC — A scalable, Node.js-powered real-time communication (RTC) toolkit with Mediasoup, FFmpeg recording, and S3 storage. Build your own LiveKit-style infrastructure for video, audio, and data streaming.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/examples/server-example/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint ./src --ext .ts,.tsx",
+    "start": "node dist/examples/server-example/index.js",
+    "test": "jest --runInBand --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashantaunpay/NexusRTC.git"
+  },
+  "keywords": [
+    "webrtc",
+    "mediasoup",
+    "sfu",
+    "ffmpeg",
+    "socket.io",
+    "realtime",
+    "streaming",
+    "video",
+    "audio",
+    "s3",
+    "recording",
+    "nodejs",
+    "typescript",
+    "rtc",
+    "kyc",
+    "nexusrtc"
+  ],
+  "author": "Prashant Aunpay <your-email@example.com>",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/prashantaunpay/NexusRTC/issues"
+  },
+  "homepage": "https://github.com/prashantaunpay/NexusRTC#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.676.0",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@types/express": "^4.17.21",
+    "axios": "^1.7.2",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mediasoup": "^3.15.6",
+    "pg": "^8.12.0",
+    "redis": "^4.7.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "uuid": "^9.0.1",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.5",
+    "@types/socket.io": "^3.0.2",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
+    "eslint": "^9.13.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
